@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_CRUD_Mvvm_2.View.ProductPage"
+             xmlns:ViewModel="crl-namespace Ejercicio_CRUD_Mvvm_2.ViewModel"
+             x:DataType="View"
+             xmlns:Models="clr-namespace:Ejercicio_CRUD_Mvvm_2.Models"
+             Title="Lista de producto">
+
+
+    <VerticalStackLayout Padding="10">
+        <StackLayout>
+            <Label Text="Nombre:" />
+            <Entry x:Name="nombreEntry" />
+            <Label Text="Apellido:" />
+            <Entry x:Name="apellidoEntry" />
+            <Label Text="Email:" />
+            <Entry x:Name="emailEntry" />
+            <Label Text="Teléfono:" />
+            <Entry x:Name="telefonoEntry" />
+            <Button x:Name="agregarButton" Text="Agregar" />
+            <Button x:Name="editarButton" Text="Editar" />
+            <ListView x:Name="proveedoresListView" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
